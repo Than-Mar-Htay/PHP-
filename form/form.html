@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Registration</title>
+    </head>
+    <body>
+        <form action="studentregistration.php" method="post">
+            <label>Name:</label><input type="text" name="name"/><br><br>
+            <label>Email:</label><input type="text" name="email"/><br><br>
+            <label>Phone:</label><input type="text" name="phone"/><br><br>
+            <label>Township:</label>
+            <select name="city">
+                <option value="Monywa">Monywa</option>
+                <option value="Budalin">Budalin</option>
+                <option value="Ayadaw">Ayadaw</option>
+            </select><br><br>
+            <input type="radio" name="grade" value="First year">First Year</input>
+            <input type="radio" name="grade" value="Second year">Second Year</input>
+            <input type="radio" name="grade" value="Third year">Third Year</input>
+            <input type="radio" name="grade" value="Fourth year">Fourth Year</input>
+            <input type="radio" name="grade" value="Fifth year">Fifth Year</input><br><br>
+            <input type="checkbox" name="subject[]" id="subject" value="PHP">PHP</input>
+            <input type="checkbox" name="subject[]" id="subject" value="JAVA">JAVA</input>
+            <input type="checkbox" name="subject[]" id="subject" value="C#">C#</input><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
